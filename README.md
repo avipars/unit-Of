@@ -7,7 +7,44 @@ I also set up the build process with gradle, and set it up with Jitpack.
 I plan on only changing some minor things and possibly adding more units. 
 Feel free to submit a pull-request with new features
 
+This project is used by:
 
+[unitMeasure: offline unit converter app for android](https://www.unitMeasure.xyz) 
+
+## Table of Contents
+- [Examples](#examples)
+- [Installation](#installation)
+- [License](#license)
+
+## Examples
+- https://digidemic.github.io/UnitOf/ provides full documentation of all measurements and units, live examples, FAQ, and much more.
+<br><br>
+
+```
+//One Liner
+double a = new UnitOf.Mass().fromPounds(5).toKilograms(); //2.26796 returned as 5 pounds is 2.26796 kilograms
+
+//Set Then Convert
+UnitOf.Length feet = new UnitOf.Length().fromFeet(5.5); //Instantiate UnitOf.Length and set "feet" as 5.5
+double b = feet.toInches(); //66 returned as 5.5 feet is 66 inches
+double c = feet.toMeters(); //1.6764 returned as 5.5 feet is 1.6764 meters
+
+//Convert Data Type and Fractions
+double d = new UnitOf.DataType("12.5").toDouble(); //12.5 of type double returned. 0.0 would be returned if conversion failed
+int e = new UnitOf.DataType("Not A Number").toInt(10); //10 of type int returned since conversion fails
+String f = new UnitOf.DataType(0.5).toFraction(); //"1/2" of type String returned. Empty string would be returned if failed
+
+//Create Your Own Custom Measurement
+UnitOf.Anything x = new UnitOf.Anything("FEET", new HashMap<Object, Double>() {{ put("METERS", 0.3048); put("INCHES", 12.0); }});
+double g = x.convertNow(36, "INCHES", "FEET"); //3 returned as 36 inches is 3 feet
+double h = x.convertNow(3, "FEET", "METERS"); //0.9144 returned as 3 feet is 0.9144 meters
+```
+
+---
+
+<br>
+
+## Installation
 Add it in your root build.gradle at the end of repositories:
 
 	allprojects {
@@ -21,9 +58,11 @@ Step 2. Add the dependency
 	dependencies {
 	        implementation 'com.github.avipars:unit-Of:0.0.1'
 	}
-  
+	
+## Author
+UnitOf website, logo, Palindrome Conversion Algorithm, and all source code & example projects for Java, JavaScript & C# created by Adam Steinberg of DIGIDEMIC, LLC
 
+## License
+- UnitOf licensed under **[Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0)**
+- Copyright 2018 © <a href="https://digidemic.io/">DIGIDEMIC, LLC</a>.
 
-This project is used by:
-
-[unitMeasure: offline unit converter app for android](https://www.unitMeasure.xyz) 
