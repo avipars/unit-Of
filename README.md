@@ -22,3 +22,8 @@ Step 2. Add the dependency
 	        implementation 'com.github.avipars:unit-Of:0.0.1'
 	}
   
+
+
+This project is used by:
+
+[unitMeasure: offline unit converter app for android](https://www.unitMeasure.xyz) 
