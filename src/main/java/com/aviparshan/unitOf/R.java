@@ -120,7 +120,7 @@ public class R extends B<S> implements Serializable{
             z = z.multiply(bb);  
             int in = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ".indexOf(nn.charAt(i));
             if(in+1 > base || in < 0){
-                throw new IllegalArgumentException(String.valueOf("Base " + base + " does not support " + v));
+                throw new IllegalArgumentException("Base " + base + " does not support " + v);
             }
             z = z.add(new BigInteger(String.valueOf(in)));         
         }

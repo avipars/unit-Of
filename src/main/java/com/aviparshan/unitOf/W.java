@@ -31,5 +31,5 @@ public enum W {
     F,  //Fahrenheit
     K,  //Kelvin
     R,  //Rankine
-    RE; //Reaumur
+    RE //Reaumur
 }

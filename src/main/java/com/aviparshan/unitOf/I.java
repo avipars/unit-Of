@@ -152,7 +152,7 @@ public class I extends B<UnitOf.DataType> implements Serializable{
      * 
      * Ex: long foo = new UnitOf.DataType(12.5).toLong(7); //Returns 12.5 from 12.5 (double). If the conversion did fail, the .toLong() passed default value of 7 is returned.
      */
-    public final long toLong(){return toLong((long)0);}
+    public final long toLong(){return toLong(0);}
     public final long toLong(long d){
         return (long)toDouble(d);//need to use cast so wont round down
     }
