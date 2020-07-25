@@ -7,9 +7,9 @@ I also set up the build process with gradle, and set it up with Jitpack.
 I plan on only changing some minor things and possibly adding more units. 
 Feel free to submit a pull-request with new features
 
-This project is used by:
+This library is used by:
 
-[unitMeasure: offline unit converter app for android](https://www.unitMeasure.xyz) 
+- [unitMeasure: offline unit converter app for android](https://www.unitMeasure.xyz) 
 
 ## Table of Contents
 - [Examples](#examples)
