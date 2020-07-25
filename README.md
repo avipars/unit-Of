@@ -14,7 +14,7 @@ This library is used by:
 ## Table of Contents
 - [Examples](#examples)
 - [Installation](#installation)
-- [License](#license)
+- [Migration](#migration)
 
 ## Examples
 - https://digidemic.github.io/UnitOf/ provides full documentation of all measurements and units, live examples, FAQ, and much more.
@@ -59,10 +59,13 @@ Step 2. Add the dependency
 	        implementation 'com.github.avipars:unit-Of:0.0.1'
 	}
 	
-## Author
-UnitOf website, logo, Palindrome Conversion Algorithm, and all source code & example projects for Java, JavaScript & C# created by Adam Steinberg of DIGIDEMIC, LLC
+## Migration
+If you are migrating from the original library, note that the version numbers will not be synced up. 
+0.0.1 is based on the 1.0.0.1 build (Latest as of July 25th, 2020). You should delete the libs directory along with the JAR. 
+Next, you'll have to remove this input 
 
-## License
-- UnitOf licensed under **[Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0)**
-- Copyright 2018 © <a href="https://digidemic.io/">DIGIDEMIC, LLC</a>.
-
+       import com.digidemic.unitof.UnitOf;
+       
+       //in favor of
+       import com.aviparshan.unitOf.UnitOf;
+      
