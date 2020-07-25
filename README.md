@@ -66,6 +66,6 @@ Next, you'll have to remove this input
 
        import com.digidemic.unitof.UnitOf;
        
-       //in favor of
+       //and replace it witth
        import com.aviparshan.unitOf.UnitOf;
       
