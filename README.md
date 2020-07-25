@@ -13,6 +13,7 @@ This library is used by:
 
 ## Table of Contents
 - [Examples](#examples)
+- [Documentation](#documentation)
 - [Installation](#installation)
 - [Migration](#migration)
 
@@ -43,6 +44,11 @@ double h = x.convertNow(3, "FEET", "METERS"); //0.9144 returned as 3 feet is 0.9
 ---
 
 <br>
+
+## Documentation
+
+We generated Javadocs, and you can find it: https://avipars.github.io/unit-Of/com/aviparshan/unitOf/index.html
+But it is reccomended to check out the original repo for more information https://github.com/Digidemic/UnitOf/blob/master/README.md
 
 ## Installation
 Add it in your root build.gradle at the end of repositories:
