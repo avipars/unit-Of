@@ -28,10 +28,7 @@ import java.util.HashMap;
 
 /**
  * https://github.com/Digidemic/UnitOf for Code, Documentation, Examples, Feature List, Diagrams, FAQ and more.
- * 
- * UnitOf is also available in C# and JavaScript.
- * 
- * 
+ *
  * Measurements Available:
  * -=-=-=-=-=-=-
  * Acceleration

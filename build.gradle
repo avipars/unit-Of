@@ -2,6 +2,6 @@ plugins {
     id 'java-library'
 }
 
-version = '0.0.1'
-group = 'com.aviparshan.unitof'
+version = '0.0.2'
+group = 'com.aviparshan.unitOf'
 
